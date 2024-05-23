@@ -51,15 +51,19 @@ h1 {
   display: block;
   margin-bottom: 10px;
   text-align: left;
+  
 }
 
 .airport-selection-select {
+  
   display: block;
   width: 100%; 
   padding: 10px; 
   box-sizing: border-box;
   margin-bottom: 10px; 
   border-radius: 10px;
+  background-color: rgb(246, 242, 246);
+  border-color: rgb(224, 221, 221);
 }
 
 #calculate, .reset {
@@ -67,9 +71,18 @@ h1 {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
+  border: 0;
 }
 
 .result {
   margin-top: 20px;
   font-size: 18px;
+}
+
+#calculate:hover, .reset:hover{
+  background-color: rgb(205, 149, 205);
+  color: azure;
+}
+#calculate:active, .reset:active{
+  background-color: rgb(82, 54, 82)
 }
