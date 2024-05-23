@@ -99,7 +99,7 @@ const calculateButton = document.getElementById("calculate");
               const flightTime = distance / speedKnots;
               const flightTimeInMinutes = Math.round(flightTime * 60);
               const flight = {
-                price: Math.round(Math.ceil(flightTime) * 8000),
+                price: Math.round(Math.round(flightTime) * 8000),
                 time: formatTime(flightTimeInMinutes)
               };
         //   console.log(distance);
@@ -110,7 +110,7 @@ const calculateButton = document.getElementById("calculate");
               
             }
         }else{
-            resultPrice.textContent = "Invalid Input"; 
+            resultPrice.textContent = "Maaf, Saya tau anda kaya, tapi silahkan naik Grab saja!"; 
             resultTime.textContent = "";
         }
           });

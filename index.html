@@ -5,21 +5,27 @@
     <link rel="stylesheet" type="text/css" href="style_jet.css">
   </head>
   <body>
+    <video class="video-background" autoplay loop muted>
+      <source src="cloud.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <h1>Private Jet Calculation</h1>
-    <form>
-      <label for="origin">Origin Airport:</label>
-      <select id="origin"></select>
-
-      <label for="destination">Destination Airport:</label>
-      <select id="destination"></select>
-    </form>
-    <button id="calculate">Calculate</button>
-    <div class="result">
-      <p id="price"></p>
-      <p id="time"></p>
+    <div class="container">
+      <form>
+        <div class="airport-selection">
+          <label for="origin">Origin Airport:</label>
+          <select id="origin" class="airport-selection-select"></select>
+          <label for="destination">Destination Airport:</label>
+          <select id="destination" class="airport-selection-select"></select>
+        </div>
+      </form>
+      <button id="calculate">Calculate</button>
+      <div class="result">
+        <p id="price"></p>
+        <p id="time"></p>
+      </div>
+      <button type="button" class="reset">Reset</button>
     </div>
-    <button type="button" class="reset">Reset</button>
-
-    <script src="main.js"> </script>
+    <script src="main.js"></script>
   </body>
 </html>
